@@ -13,6 +13,9 @@ public class Quit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if esc is pressed, quit the application
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            Debug.Log("esc pressed");
+            Application.Quit();        }
     }
 }
