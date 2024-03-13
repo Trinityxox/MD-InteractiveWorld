@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 17236137}
   - component: {fileID: 17236136}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2732,6 +2732,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 4.89
       objectReference: {fileID: 0}
+    - target: {fileID: 808951038045131108, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 808951038045131108, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.001
+      objectReference: {fileID: 0}
     - target: {fileID: 808951038047343294, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2800,6 +2808,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -3.53
       objectReference: {fileID: 0}
+    - target: {fileID: 808951038298392501, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cd790ac0d37bdc46970f6688c6b5070, type: 2}
     - target: {fileID: 808951038312412002, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.9879994
