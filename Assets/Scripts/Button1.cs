@@ -11,6 +11,9 @@ public class Button1 : MonoBehaviour
     void Start()
     {
         ui.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        
     }
 
     // Update is called once per frame
@@ -19,11 +22,16 @@ public class Button1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             ui.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
         }
     }
 
     public void CloseUI()
     {
-            ui.SetActive(false);
+        ui.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
