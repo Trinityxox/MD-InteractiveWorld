@@ -21,4 +21,9 @@ public class Button1 : MonoBehaviour
             ui.SetActive(true);
         }
     }
+
+    public void CloseUI()
+    {
+            ui.SetActive(false);
+    }
 }
