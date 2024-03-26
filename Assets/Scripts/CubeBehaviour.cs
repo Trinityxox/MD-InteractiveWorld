@@ -18,7 +18,7 @@ public class CubeBehaviour : MonoBehaviour
     }
        private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("cube");
+        Debug.Log("ding dong");
                 GetComponent<AudioSource>().PlayOneShot(cubeSmashSound);
 
     }
