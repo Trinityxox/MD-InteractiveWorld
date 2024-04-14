@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BottleBehaviour : MonoBehaviour
+public class CleanUp1 : MonoBehaviour
 {
-
     public GameObject ui;
-    public AudioClip drinkingWaterSound;
 
     // Start is called before the first frame update
     void Start()
@@ -38,10 +36,17 @@ Cursor.lockState = CursorLockMode.None;
 Cursor.visible = true;
 }
 
-public void PressDrink(){
+public void PressYes(){
     HideUI();
     Destroy(this.gameObject);
-    GetComponent<AudioSource>().PlayOneShot(drinkingWaterSound);
+
 
 }
+
+public void PressNo(){
+    HideUI();
+
+
+}
+
 }
