@@ -39,9 +39,6 @@ Cursor.visible = true;
 
 public void PressYes(){
     HideUI();
-    myLight.enabled = !myLight.enabled;
-
-
 }
 
 public void PressOk(){

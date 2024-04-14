@@ -39,8 +39,6 @@ Cursor.visible = true;
 
 public void PressDrink(){
     HideUI();
-    myLight.enabled = !myLight.enabled;
-
 
 }
 
