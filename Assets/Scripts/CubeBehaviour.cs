@@ -22,4 +22,5 @@ public class CubeBehaviour : MonoBehaviour
                 GetComponent<AudioSource>().PlayOneShot(cubeSmashSound);
 
     }
+    
 }
