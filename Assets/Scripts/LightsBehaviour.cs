@@ -23,7 +23,7 @@ public class LightsBehaviour : MonoBehaviour
     }
 
            private void OnTriggerEnter(Collider other){
-            Debug.Log("let there be light");
+        
             if(other.tag == "Player"){
                 ShowUI();
             }
@@ -43,7 +43,8 @@ Cursor.visible = true;
 
 public void PressYes(){
     HideUI();
-    myLight.enabled = myLight.enabled;
+    myLight.enabled = !myLight.enabled;
+     Debug.Log("let there be light");
 
 }
 
