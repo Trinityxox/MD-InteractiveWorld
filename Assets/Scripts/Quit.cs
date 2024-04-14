@@ -14,7 +14,7 @@ public class Quit : MonoBehaviour
     void Update()
     {
         //if esc is pressed, quit the application
-        if(Input.GetKeyDown(KeyCode.1)){
+        if(Input.GetKeyDown(KeyCode.'1')){
             Debug.Log("esc pressed");
             Application.Quit();        }
     }
