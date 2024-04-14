@@ -10,7 +10,7 @@ public class BottleBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ShowUI();
+        HideUI();
     }
 
     // Update is called once per frame
@@ -40,9 +40,5 @@ Cursor.visible = true;
 public void PressDrink(){
     HideUI();
 
-}
-
-public void PressOk(){
-    HideUI();
 }
 }

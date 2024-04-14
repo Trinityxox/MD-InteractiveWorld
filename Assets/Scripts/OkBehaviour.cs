@@ -37,10 +37,6 @@ Cursor.lockState = CursorLockMode.None;
 Cursor.visible = true;
 }
 
-public void PressYes(){
-    HideUI();
-}
-
 public void PressOk(){
     HideUI();
 }
