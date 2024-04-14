@@ -6,6 +6,7 @@ public class BottleBehaviour : MonoBehaviour
 {
 
     public GameObject ui;
+    public AudioClip drinkingWaterSound;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,8 @@ Cursor.visible = true;
 
 public void PressDrink(){
     HideUI();
+    
+    GetComponent<AudioSource>().PlayOneShot(drinkingWaterSound);
 
 }
 }
