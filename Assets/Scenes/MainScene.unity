@@ -939,9 +939,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4248656965856329395, guid: 6012fccf4ebae9e4cb47349aa82f193d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 200047279}
-    - targetCorrespondingSourceObject: {fileID: 4248656965856329395, guid: 6012fccf4ebae9e4cb47349aa82f193d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 200047280}
   m_SourcePrefab: {fileID: 100100000, guid: 6012fccf4ebae9e4cb47349aa82f193d, type: 3}
 --- !u!4 &200047277 stripped
@@ -954,18 +951,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4248656965856329395, guid: 6012fccf4ebae9e4cb47349aa82f193d, type: 3}
   m_PrefabInstance: {fileID: 200047276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &200047279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 200047278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5edf12dae90de4a5999b930026e96368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &200047280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1336,7 +1321,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 314603242}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200047278}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &314603242
 MonoBehaviour:
   m_ObjectHideFlags: 0

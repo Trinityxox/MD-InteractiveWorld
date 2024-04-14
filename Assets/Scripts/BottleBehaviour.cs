@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaterBehaviour : MonoBehaviour
+public class BottleBehaviour : MonoBehaviour
 {
- 
+
     public GameObject ui;
 
     // Start is called before the first frame update
@@ -40,6 +40,7 @@ Cursor.visible = true;
 public void PressDrink(){
     HideUI();
     myLight.enabled = !myLight.enabled;
+
 
 }
 
