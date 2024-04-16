@@ -1807,7 +1807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &370711573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1927,7 +1927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e03502c325564a4a8c846d4d66f897a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeSmashSound: {fileID: 8300000, guid: 0183aba1ab88b4884a4b8a4d22d6b3cc, type: 3}
+  DoorBellSound: {fileID: 0}
 --- !u!82 &370711579
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4564,6 +4564,8 @@ GameObject:
   - component: {fileID: 1193235780}
   - component: {fileID: 1193235782}
   - component: {fileID: 1193235781}
+  - component: {fileID: 1193235784}
+  - component: {fileID: 1193235783}
   m_Layer: 0
   m_Name: Lamp_Apt_03 (3)
   m_TagString: Untagged
@@ -4637,6 +4639,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193235779}
   m_Mesh: {fileID: -6690907983005014119, guid: 7a1dd57bd8b6ca44cbf5f922801b2975, type: 3}
+--- !u!114 &1193235783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193235779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e03502c325564a4a8c846d4d66f897a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorBellSound: {fileID: 8300000, guid: 0183aba1ab88b4884a4b8a4d22d6b3cc, type: 3}
+--- !u!65 &1193235784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193235779}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1443719, y: 3.9229093, z: 1.1443719}
+  m_Center: {x: -0.00000023216862, y: -1.9614546, z: -6.0824237e-15}
 --- !u!1 &1209263053
 GameObject:
   m_ObjectHideFlags: 0

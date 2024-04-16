@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeBehaviour : MonoBehaviour
+
+public class BellBehaviour : MonoBehaviour
     {
-    public AudioClip cubeSmashSound;
+    public AudioClip DoorBellSound;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -19,7 +19,9 @@ public class CubeBehaviour : MonoBehaviour
        private void OnTriggerEnter(Collider other)
     {
         Debug.Log("ding dong");
-                GetComponent<AudioSource>().PlayOneShot(cubeSmashSound);
+                GetComponent<AudioSource>().PlayOneShot(DoorBellSound);
+
+
 
     }
     
