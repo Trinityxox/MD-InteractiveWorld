@@ -6,9 +6,12 @@ using UnityEngine;
 public class BellBehaviour : MonoBehaviour
     {
     public AudioClip DoorBellSound;
+    public GameObject Burger;
+
     // Start is called before the first frame update
     void Start()
     {
+        Burger.SetActive(false);
     }
 
     // Update is called once per frame
@@ -16,10 +19,12 @@ public class BellBehaviour : MonoBehaviour
     {
         
     }
-       private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter(Collider other)
     {
         Debug.Log("ding dong");
-                GetComponent<AudioSource>().PlayOneShot(DoorBellSound);
+        GetComponent<AudioSource>().PlayOneShot(DoorBellSound);
+        Burger.SetActive(true);
 
 
 
