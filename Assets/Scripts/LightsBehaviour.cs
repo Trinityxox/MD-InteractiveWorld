@@ -7,13 +7,14 @@ public class LightsBehaviour : MonoBehaviour
 
     public GameObject ui;
 
-    Light myLight;
+    public GameObject myLights;
 
     // Start is called before the first frame update
     void Start()
     {
         HideUI();
-        myLight = GetComponent<Light>();
+        myLights.SetActive(false);
+        // myLight = GetComponent<Light>();
     }
 
     // Update is called once per frame
@@ -22,34 +23,33 @@ public class LightsBehaviour : MonoBehaviour
         
     }
 
-           private void OnTriggerEnter(Collider other){
+    private void OnTriggerEnter(Collider other){
         
-            if(other.tag == "Player"){
+        if(other.tag == "Player"){
                 ShowUI();
-            }
-           }
+        }
+    }
 
-public void HideUI(){
-ui.SetActive(false);
-Cursor.lockState = CursorLockMode.Locked;
-Cursor.visible = false;
-}
+    public void HideUI(){
+        ui.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
-public void ShowUI(){
-ui.SetActive(true);
-Cursor.lockState = CursorLockMode.None;
-Cursor.visible = true;
-}
+    public void ShowUI(){
+        ui.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 
-public void PressYes(){
-    HideUI();
-    myLight.enabled = !myLight.enabled;
-     Debug.Log("let there be light");
+    public void PressYes(){
+        HideUI();
+        myLights.SetActive(true);
+        Debug.Log("let there be light");
+    }
 
-}
-
-public void PressNo(){
-    HideUI();
-}
+    public void PressNo(){
+        HideUI();
+    }
 
 }
