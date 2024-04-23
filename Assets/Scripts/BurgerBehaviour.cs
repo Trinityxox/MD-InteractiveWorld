@@ -2,19 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightsBehaviour : MonoBehaviour
+public class BurgerBehaviour : MonoBehaviour
 {
-
     public GameObject ui;
-
-    public GameObject myLights;
-
+    public GameObject Burger;
+    public GameObject Tv;
     // Start is called before the first frame update
     void Start()
     {
         HideUI();
-        myLights.SetActive(false);
-        // myLight = GetComponent<Light>();
+        HideTv();
     }
 
     // Update is called once per frame
@@ -22,15 +19,13 @@ public class LightsBehaviour : MonoBehaviour
     {
         
     }
-
-    private void OnTriggerEnter(Collider other){
+        private void OnTriggerEnter(Collider other){
         
         if(other.tag == "Player"){
                 ShowUI();
         }
     }
-
-    public void HideUI(){
+        public void HideUI(){
         ui.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -41,15 +36,26 @@ public class LightsBehaviour : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+            public void HideTv(){
+        Tv.SetActive(false);
+        // Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.visible = false;
+    }
+
+    public void ShowTv(){
+        Tv.SetActive(true);
+        // Cursor.lockState = CursorLockMode.None;
+        // Cursor.visible = true;
+    }
 
     public void PressYes(){
         HideUI();
-        myLights.SetActive(true);
-        Debug.Log("let there be light");
+        Debug.Log("yum");
+        Burger.SetActive(false);
+        ShowTv();
     }
 
     public void PressNo(){
         HideUI();
     }
-
 }
