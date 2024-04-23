@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
 public class BottleBehaviour : MonoBehaviour
@@ -9,6 +10,7 @@ public class BottleBehaviour : MonoBehaviour
     public GameObject ui;
     public AudioClip drinkingWaterSound;
     public PostProcessVolume fuzzyVision;
+    Vignette m_Vignette;
     // QuickVolume(int layer, float priority, params PostProcessEffectSettings[] settings);
 
 // PostProcessVolume m_Volume;
@@ -18,6 +20,7 @@ public class BottleBehaviour : MonoBehaviour
     void Start()
     {
         HideUI();
+        m_Vignette = fuzzyVision.profile.GetSettings<Vignette>();
        m_Vignette.active = true;
         
     }
@@ -27,12 +30,12 @@ public class BottleBehaviour : MonoBehaviour
     {
         
     }
-           private void OnTriggerEnter(Collider other){
+    private void OnTriggerEnter(Collider other){
         
-            if(other.tag == "Player"){
+        if(other.tag == "Player"){
                 ShowUI();
             }
-           }
+     }
 
 public void HideUI(){
 ui.SetActive(false);
