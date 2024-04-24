@@ -21,7 +21,8 @@ public class BottleBehaviour : MonoBehaviour
 //fuzzyVision.
         // fuzzyVision.enabled = false;
       m_Vignette = fuzzyVision.sharedProfile.GetSetting<Vignette>();
-       //m_Vignette.active = true;
+      m_Vignette.active = false;
+
     }
 
     // Update is called once per frame

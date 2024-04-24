@@ -15,7 +15,6 @@ namespace SojaExiles
 		void Start()
 		{
 			open = false;
-			Debug.Log ("door script running");
 		}
 
 		void OnMouseOver()
