@@ -986,13 +986,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808951036724994761}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5378a62130f384e60952efb9eb01dbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1723184709}
-  myLights: {fileID: 808951037663493621}
+  myLights: {fileID: 808951036724994761}
 --- !u!1 &189751142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2845,13 +2845,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808951038351879984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5378a62130f384e60952efb9eb01dbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1723184709}
-  myLights: {fileID: 808951037663493621}
+  myLights: {fileID: 808951038351879984}
 --- !u!1 &498557754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4229,13 +4229,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808951037809104949}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5378a62130f384e60952efb9eb01dbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1723184709}
-  myLights: {fileID: 808951037663493621}
+  myLights: {fileID: 808951037809104949}
 --- !u!4 &775310127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5018950055216721060, guid: c15f037642a1e1b439d19869e86e1ddf, type: 3}
@@ -6681,13 +6681,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280278435}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5378a62130f384e60952efb9eb01dbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1723184709}
-  myLights: {fileID: 808951037663493621}
+  myLights: {fileID: 1280278435}
 --- !u!108 &1283455596
 Light:
   m_ObjectHideFlags: 0
@@ -7143,13 +7143,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808951037937705140}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5378a62130f384e60952efb9eb01dbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1723184709}
-  myLights: {fileID: 808951037663493621}
+  myLights: {fileID: 808951037937705140}
 --- !u!1 &1386364569
 GameObject:
   m_ObjectHideFlags: 0
@@ -7240,13 +7240,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808951037382904607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5378a62130f384e60952efb9eb01dbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1723184709}
-  myLights: {fileID: 808951037663493621}
+  myLights: {fileID: 808951037382904607}
 --- !u!1 &1394265357
 GameObject:
   m_ObjectHideFlags: 0
@@ -8756,7 +8756,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1723184712
 Canvas:
   m_ObjectHideFlags: 0
@@ -10043,13 +10043,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808951037491870888}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5378a62130f384e60952efb9eb01dbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1723184709}
-  myLights: {fileID: 808951037663493621}
+  myLights: {fileID: 808951037491870888}
 --- !u!4 &1965562376 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3431769699281883590, guid: 9e5c2bb5031891140882f5e81a01c0c7, type: 3}
@@ -10979,13 +10979,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808951037749259097}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5378a62130f384e60952efb9eb01dbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1723184709}
-  myLights: {fileID: 808951037663493621}
+  myLights: {fileID: 808951037749259097}
 --- !u!4 &2098562673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 853864459299421544, guid: 4fd059785718649499a344b0c22ecd22, type: 3}
@@ -39224,6 +39224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 808951037663493622}
+  - component: {fileID: 808951037663493623}
   m_Layer: 0
   m_Name: Lighting
   m_TagString: Untagged
@@ -39260,6 +39261,20 @@ Transform:
   - {fileID: 1283455597}
   m_Father: {fileID: 808951037854687490}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &808951037663493623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037663493621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5378a62130f384e60952efb9eb01dbd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1723184709}
+  myLights: {fileID: 808951037663493621}
 --- !u!23 &808951037666511536
 MeshRenderer:
   m_ObjectHideFlags: 0
