@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class BurgerBehaviour : MonoBehaviour
 {
     public GameObject ui;
     public GameObject Burger;
+    public PostProcessVolume blurredVision;
+    Grain m_Grain;
     public GameObject Tv;
     // Start is called before the first frame update
     void Start()
     {
         HideUI();
         HideTv();
+        m_Grain = blurredVision.sharedProfile.GetSetting<Grain>();
+        m_Grain.active = true;
     }
 
     // Update is called once per frame
@@ -50,9 +55,9 @@ public class BurgerBehaviour : MonoBehaviour
 
     public void PressYes(){
         HideUI();
-        Debug.Log("yum");
         Burger.SetActive(false);
         ShowTv();
+    m_Grain.intensity.Override(0f);
     }
 
     public void PressNo(){

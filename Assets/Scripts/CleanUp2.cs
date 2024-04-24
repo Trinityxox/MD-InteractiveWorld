@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
-public class CleanUp1 : MonoBehaviour
+public class CleanUp2 : MonoBehaviour
 {
     public GameObject ui;
     public PostProcessVolume blurredVision;
@@ -44,7 +44,7 @@ Cursor.visible = true;
 public void PressYes(){
     HideUI();
     Destroy(this.gameObject);
-    m_Grain.intensity.Override(0.75f);
+    m_Grain.intensity.Override(0.5f);
 
 
 }

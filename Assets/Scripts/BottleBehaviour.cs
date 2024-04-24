@@ -6,22 +6,16 @@ using UnityEngine.Rendering.PostProcessing;
 public class BottleBehaviour : MonoBehaviour
 {
     public GameObject ui;
-    public AudioClip drinkingWaterSound;
+    public AudioClip drinkingWater;
     public PostProcessVolume fuzzyVision;
     Vignette m_Vignette;
-    // QuickVolume(int layer, float priority, params PostProcessEffectSettings[] settings);
-
-// PostProcessVolume m_Volume;
-//    Vignette m_Vignette
 
     // Start is called before the first frame update
     void Start()
     {
         HideUI();
-//fuzzyVision.
-        // fuzzyVision.enabled = false;
       m_Vignette = fuzzyVision.sharedProfile.GetSetting<Vignette>();
-      m_Vignette.active = false;
+      m_Vignette.active = true;
 
     }
 
@@ -52,7 +46,19 @@ Cursor.visible = true;
 public void PressDrink(){
     HideUI();
     Destroy(this.gameObject);
-    GetComponent<AudioSource>().PlayOneShot(drinkingWaterSound);
+    
+    AudioSource audioSource = GetComponent<AudioSource>();
+
+    // Ensure that the AudioSource is enabled temporarily
+    bool wasAudioSourceEnabled = audioSource.enabled;
+    audioSource.enabled = true;
+
+    // Play the audio clip
+    audioSource.PlayOneShot(drinkingWater);
+
+    // Restore the original enabled state of the AudioSource
+    audioSource.enabled = wasAudioSourceEnabled;
+    
     m_Vignette.active = false;
 
 }

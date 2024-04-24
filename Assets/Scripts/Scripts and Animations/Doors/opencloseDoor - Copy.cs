@@ -23,7 +23,6 @@ namespace SojaExiles
 				if (PlayerArmature)
 				{
 					float dist = Vector3.Distance(PlayerArmature.position, transform.position);
-					Debug.Log(dist);
 					if (dist < 15)
 					{
 						if (open == false)
