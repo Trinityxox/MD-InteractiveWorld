@@ -45,7 +45,6 @@ public class LightsBehaviour : MonoBehaviour
     public void PressYes(){
         HideUI();
         myLights.SetActive(true);
-        Debug.Log("let there be light");
     }
 
     public void PressNo(){

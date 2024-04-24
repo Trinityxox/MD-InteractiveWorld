@@ -22,7 +22,6 @@ public class BellBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("ding dong");
         GetComponent<AudioSource>().PlayOneShot(DoorBellSound);
         Burger.SetActive(true);
 
