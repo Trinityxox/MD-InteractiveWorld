@@ -7,6 +7,8 @@ public class BottleBehaviour : MonoBehaviour
 {
     public GameObject ui;
     public AudioClip drinkingWater;
+    public AudioSource soundSource;
+    public GameObject ui2;
     public PostProcessVolume fuzzyVision;
     Vignette m_Vignette;
 
@@ -16,6 +18,7 @@ public class BottleBehaviour : MonoBehaviour
         HideUI();
       m_Vignette = fuzzyVision.sharedProfile.GetSetting<Vignette>();
       m_Vignette.active = true;
+      HideUI2();
 
     }
 
@@ -43,23 +46,30 @@ Cursor.lockState = CursorLockMode.None;
 Cursor.visible = true;
 }
 
+public void HideUI2(){
+ui2.SetActive(false);
+Cursor.lockState = CursorLockMode.Locked;
+Cursor.visible = false;
+}
+
+public void ShowUI2(){
+ui2.SetActive(true);
+Cursor.lockState = CursorLockMode.None;
+Cursor.visible = true;
+}
+
 public void PressDrink(){
     HideUI();
     Destroy(this.gameObject);
-    
-    AudioSource audioSource = GetComponent<AudioSource>();
 
-    // Ensure that the AudioSource is enabled temporarily
-    bool wasAudioSourceEnabled = audioSource.enabled;
-    audioSource.enabled = true;
-
-    // Play the audio clip
-    audioSource.PlayOneShot(drinkingWater);
-
-    // Restore the original enabled state of the AudioSource
-    audioSource.enabled = wasAudioSourceEnabled;
+if (!soundSource.isPlaying)
+        {
+            soundSource.clip = drinkingWater;
+            soundSource.Play();
+        }
     
     m_Vignette.active = false;
-
+    
+ShowUI2();
 }
 }

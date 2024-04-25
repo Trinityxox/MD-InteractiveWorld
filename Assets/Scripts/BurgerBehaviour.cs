@@ -7,6 +7,8 @@ public class BurgerBehaviour : MonoBehaviour
 {
     public GameObject ui;
     public GameObject Burger;
+    public AudioClip eatingBurger;
+    public AudioSource soundSource;
     public PostProcessVolume blurredVision;
     Grain m_Grain;
     public GameObject Tv;
@@ -57,6 +59,11 @@ public class BurgerBehaviour : MonoBehaviour
         HideUI();
         Burger.SetActive(false);
         ShowTv();
+        if (!soundSource.isPlaying)
+        {
+            soundSource.clip = eatingBurger;
+            soundSource.Play();
+        }
     m_Grain.intensity.Override(0f);
     }
 
